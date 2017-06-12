@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.00019999999495" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Client.lwindowController">
+  <children>
+    <MenuBar layoutX="0.0" layoutY="-1.0" prefWidth="400.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <Label layoutX="30.0" layoutY="101.0" text="Username" />
+    <Label layoutX="30.0" layoutY="143.0" text="Password" />
+    <TextField fx:id="userField" layoutX="167.0" layoutY="101.0" prefWidth="200.0" promptText="" text="root" />
+    <TextField fx:id="passField" layoutX="167.0" layoutY="137.0" prefWidth="200.0" text="asdf" />
+    <Button fx:id="button" layoutX="26.0" layoutY="192.0" mnemonicParsing="false" onAction="#loginButtonAction" prefWidth="134.0" text="Login" />
+    <Label fx:id="label" layoutX="30.0" layoutY="47.0" prefWidth="337.0" text="" textFill="RED" />
+    <Button id="button" layoutX="252.0" layoutY="192.0" mnemonicParsing="false" onAction="#loginButtonAction" prefWidth="134.0" text="Exit" />
+  </children>
+</AnchorPane>
